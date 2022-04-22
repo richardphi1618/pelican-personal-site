@@ -1,14 +1,10 @@
-Title: About/Resume Page  
+Title: About me 
 Richard Blanchette
 ======================================
 
-![This is me!](./images/about/self_portrait.jpg)
+![This is me!]({static}/images/about/self_portrait.jpg)
 
-### Professional Problem Solver
-
-Email: richard@rsbengineering.net  
-Cell: 757-268-9937  
-download pdf: [link](https://drive.google.com/file/d/1S67iOwqNv-sCtzFF98fitXmcq606dBzD/view?usp=sharing)
+## Professional Problem Solver
 
 ### **Education**
 
@@ -32,16 +28,27 @@ Concentration in Mechanical Design
 
 **Certs**: Passed my Fundamental of Engineering test as of May 2014
 
-**Work Experience**
+### **Work Experience**
+
+**Apex Clean Energy, Disputanta, VA**  
+**Febuary 2022 – Present**
+
+Data Engineer 
+
+*   Support apps to encourage user data exploration and analysis
+*   Support and develop best practices for implementing and maintaing a data pipeline
+*   Develop custom applications that interact with any kind of data to support the company mission 
 
 **Commonwealth Center for Advanced Manufacturing, Disputanta, VA**  
-**June 2020 – Present**
+**June 2020 – Febuary 2022**
 
 Systems Engineer– Intelligent Factory
 
 *   Support ongoing research & development projects from a systems-of-systems design perspective
 *   Development of system architectures, communication interfaces, query & API services, stand-alone applications, and data management systems.
 *   Develop standards and common practices for implementing an intelligent factory
+
+_Reason for Transition:_ New opportunity in line with long term career goals and personal mission
 
 **Hartfiel Automation, Richmond, VA**  
 **January 2019 – March 2020**

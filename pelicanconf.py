@@ -1,12 +1,17 @@
 AUTHOR = 'Richard Blanchette'
-SITENAME = 'ExampleSite'
-SITEURL = ''
+#SITEURL = 'http://richardphi.dev'
 
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
+
+
+SITENAME = "Richard Blanchette Personal Site"
+SITETITLE = "Richardphi.dev"
+SITESUBTITLE = "Professional Problem Solver"
+SITEDESCRIPTION = "Richard Blanchette's Thoughts and Writings"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -15,20 +20,31 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-# LINKS = (('Pelican', 'https://getpelican.com/'),
-#          ('Python.org', 'https://www.python.org/'),
-#          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-#          ('You can modify those links in your config file', '#'),)
+MENUITEMS = (
+    ("Archives", "/archives.html"),
+    ("Categories", "/categories.html"),
+    ("Tags", "/tags.html"),
+)
 
 # Social widget
-SOCIAL = (('Linkedin', 'https://www.linkedin.com/in/richphi/'),
-          ('Twitter', 'https://twitter.com/rich_phi'),
-          ('Github', 'https://github.com/richardphi1618'))
+SOCIAL = (
+    ("linkedin", "https://www.linkedin.com/in/richphi/"),
+    ("github", "https://github.com/richardphi1618"),
+    ("twitter", "https://twitter.com/rich_phi"),
+)
 
 DEFAULT_PAGINATION = 10
 
 THEME = "./pelican-themes/Flex"
+THEME_COLOR = 'dark'
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
+
+PYGMENTS_STYLE = 'emacs'
+PYGMENTS_STYLE_DARK = 'monokai'
+
+BROWSER_COLOR = "#38761d"
+ROBOTS = "index, follow"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

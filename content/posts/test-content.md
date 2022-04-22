@@ -1,13 +1,10 @@
 Title: Richard Markdown Test Book
 date: 2022-04-22
+tags: test
+category: troubleshooting
+author: Richard Blanchette
+summary: Short version for index and feeds
 ##############
-
-:tags: test
-:category: troubleshooting
-:slug: my-super-post
-:author: Richard Blanchette
-:summary: Short version for index and feeds
-
 
 # Richard Markdown Test Book
 

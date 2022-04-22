@@ -1,10 +1,14 @@
 Title: DIY Home IoT Network
 date: 2020-04-22
+tags: IoT
+category: home projects
+author: Richard Blanchette
+summary: Write up of how I was able to create a local IoT network in my home.
 ##############
 
 I want my first post to be a top-level view of how I laid my house out for collecting and dashboarding data. Let us start with the diagram below:
 
-![Home-Network]({static}/images/HomeMQTTNetwork.jpg)
+![Home-Network]({static}/images/iot-diy/HomeMQTTNetwork.jpg)
 
 Whoa…. Lots going on here.
 
@@ -14,23 +18,23 @@ Let us break it down starting from the “load” or sensor/panels. I collect da
 
 My next problem, I needed a place for my broker to reside as a server. For full control, I decided to setup my own broker in my house. Other setups use off-site brokers and that is what is typical for “cloud” based solutions, but that can be costly. I also knew I wanted to log my data to a database, that would require some post/pre-processing before I logged, and I needed a way to show or “dashboard” this data over time. So, I went with what I thought would be the cheapest (let’s be honest - the most fun) option and built a home server myself out of new and old spare computer parts I had lying around.
 
-![Home Server]({static}/images/homeserver.jpg')
+![Home Server]({static}/images/iot-diy/homeserver.jpg)
 
 I also knew that having all of these service running on a single machine could become cumbersome and often times would be messy as you could potentially have the services over lap. I was doing some research on docker at the time and wanted to learn more so this seemed like a good time. What a great tool! Docker is awesome! Not only docker itself but the rabbit hole of other services and management tools out there that go with it. For some great examples look at: [Image list](https://fleet.linuxserver.io) developed by [LinuxServer.io](https://www.linuxserver.io) For now I'll gloss over it but would like to spend more time on documenting how my docker is setup. In summary I have multiple "containers" running each of these services as a complete "stack" or solution. Portainer is a seperate container I use to manage and review the health and settings of each of the containers without having to rely on the command line.
 
-![Portainer]({static}/images/portainer.png')
+![Portainer]({static}/images/iot-diy/portainer.png)
 
 Okay, so now that I have my environment and I have my communication from my devices to my server and it’s all talking over my home network (the easy part -ha). I needed to log the data somewhere. I didn’t want to point the data, being collected through the broker, straight into a database. Even if I did my best trying to maintain uniformity, there are things that just come across differently from different devices. Therefore, I needed some way of massaging the data and cleaning it before I stored it in my database. I stumbled across Node-Red as a powerful IO and data tool from my work in the industrial field. Advantech has some really fascinating products coming out using this.
 
 Node-Red is a graphic way of writing java code. I knew nothing about java going into this but was able to get a very basic program up and running in about an hour or two. What blew me away was the ability to download everything you needed for a dashboard from within the browser-based development environment. The layout also reminded me a lot of what I would see in the IEC-61131 languages known as function blocks. I didn’t need the code behind the block but the read-me associated with the block would tell me everything I needed to know about how to use it. Node-red is Java and I can see how people love it and hate it. The biggest thing I had to get used to was its’ event driven nature versus what I am traditionally used to with cyclic programming. Sample of what some of my code looks like:
 
-![Node-Red Flow]({static}/images/node-red.png')
+![Node-Red Flow]({static}/images/iot-diy/node-red.png)
 
 Right, now that I have my data cleaned and polished and ready for a database, I need to pick a database…. There are soooo many! The most ubiquitous database structure out there that I’ve seen/used was SQL (and the dozen or so cousins/forks from). The problem I saw with using SQL is that the data I wanted to record needed to be recorded with a time stamp. All the SQL based databases are relational, meaning I would have to do an extra step in managing large amounts of continuous data. InfluxDB on the other hand seemed to take all data acquired and automatically assigned it with a time stamp. It seemed better built for how I wanted to see my data, which is important for my dashboard.
 
 Dashboard is the most exciting part. I am not only seeing the state of my data, but I can make inferences based on what my data is doing over time. So many “AHA!” moments happen when you start doing this. Graphana seemed to be a top choice for a lot of people in the IT industry and it seemed light weight, and gorgeous! If you ever have time and want to go down a rabbit hole just google Graphana graphs and the data science nerd in me just can’t stop staring. Once I had Graphana up and running, it was less than an hour to point graphana to my database and then it was simple to add scaling and titles, and viola! You too can make your data beautiful.
 
-![Grafana Dashboard]({static}/images/grafana.png')
+![Grafana Dashboard]({static}/images/iot-diy/grafana.png)
 
 So, from the picture above, you’ll see I’m also playing around seeing if I can monitor workload/ memory usage of the remote devices as well as my server (needs some work). Overall I am very happy with how it turned out. I also was able to add local weather with a node-red module that I found (in green).
 
