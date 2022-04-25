@@ -1,5 +1,5 @@
 AUTHOR = 'Richard Blanchette'
-#SITEURL = 'http://richardphi.dev'
+SITEURL = 'http://richardphi.dev'
 
 PATH = 'content'
 
