@@ -49,4 +49,4 @@ ROBOTS = "index, follow"
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-PORT=8001
+PORT=5051
