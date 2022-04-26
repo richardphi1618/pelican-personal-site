@@ -1,5 +1,5 @@
 Title: About Me
-======================================
+##############
 
 ![This is me!]({static}/images/about/self_portrait.jpg)
 
