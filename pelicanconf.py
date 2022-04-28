@@ -1,10 +1,8 @@
 AUTHOR = 'Richard Blanchette'
-#SITEURL = 'https://www.richardphi.dev'
+SITEURL = ''
 
 PATH = 'content'
-
 TIMEZONE = 'America/New_York'
-
 DEFAULT_LANG = 'en'
 
 

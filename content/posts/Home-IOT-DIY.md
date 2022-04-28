@@ -47,11 +47,11 @@ I started this with basic server grade programming knowledge and about 5 years o
 \*\*\*Follow Up:  
 Recently Did a presentation on this in more detail. See my PowerPoint slides here: [Home Industrial Network Presentation](https://1drv.ms/p/s!AnRPoczwFXt-gZlFK6aLPQ_aAGvAcQ?e=w1e1Ch)
 
-\*\*\*Here is an embedded iframe of the final product:
+<!-- \*\*\*Here is an embedded iframe of the final product:
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     width=100%
     height="800"
     src="https://grafana.rsbengineering.dev/d/jorQjxQWk/home?orgId=1&amp;refresh=5s&amp;amp">
-</iframe>
+</iframe> -->

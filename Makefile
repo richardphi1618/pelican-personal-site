@@ -7,6 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+gh-PUBLISHCONF=$(BASEDIR)/ghprofile_conf.py
 
 
 DEBUG ?= 0
@@ -68,5 +69,9 @@ devserver-global:
 publish:
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
 
+publish-gh:
+	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(gh-PUBLISHCONF)" $(PELICANOPTS)
+	ghp-import output -b gh-pages
+	git push gh-profile gh-pages -f
 
 .PHONY: html help clean regenerate serve serve-global devserver publish 
