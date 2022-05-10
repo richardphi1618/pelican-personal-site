@@ -32,7 +32,7 @@ Node-Red is a graphic way of writing java code. I knew nothing about java going 
 
 Right, now that I have my data cleaned and polished and ready for a database, I need to pick a database…. There are soooo many! The most ubiquitous database structure out there that I’ve seen/used was SQL (and the dozen or so cousins/forks from). The problem I saw with using SQL is that the data I wanted to record needed to be recorded with a time stamp. All the SQL based databases are relational, meaning I would have to do an extra step in managing large amounts of continuous data. InfluxDB on the other hand seemed to take all data acquired and automatically assigned it with a time stamp. It seemed better built for how I wanted to see my data, which is important for my dashboard.
 
-Dashboard is the most exciting part. I am not only seeing the state of my data, but I can make inferences based on what my data is doing over time. So many “AHA!” moments happen when you start doing this. Graphana seemed to be a top choice for a lot of people in the IT industry and it seemed light weight, and gorgeous! If you ever have time and want to go down a rabbit hole just google Graphana graphs and the data science nerd in me just can’t stop staring. Once I had Graphana up and running, it was less than an hour to point graphana to my database and then it was simple to add scaling and titles, and viola! You too can make your data beautiful.
+Dashboard is the most exciting part. I am not only seeing the state of my data, but I can make inferences based on what my data is doing over time. So many “AHA!” moments happen when you start doing this. Grafana seemed to be a top choice for a lot of people in the IT industry and it seemed light weight, and gorgeous! If you ever have time and want to go down a rabbit hole just google Grafana graphs and the data science nerd in me just can’t stop staring. Once I had Grafana up and running, it was less than an hour to point Grafana to my database and then it was simple to add scaling and titles, and viola! You too can make your data beautiful.
 
 ![Grafana Dashboard]({static}/images/iot-diy/grafana.png)
 
@@ -47,11 +47,11 @@ I started this with basic server grade programming knowledge and about 5 years o
 \*\*\*Follow Up:  
 Recently Did a presentation on this in more detail. See my PowerPoint slides here: [Home Industrial Network Presentation](https://1drv.ms/p/s!AnRPoczwFXt-gZlFK6aLPQ_aAGvAcQ?e=w1e1Ch)
 
-<!-- \*\*\*Here is an embedded iframe of the final product:
+\*\*\*Here is an embedded iframe of the final product:
 
 <iframe id="inlineFrameExample"
     title="Inline Frame Example"
     width=100%
     height="800"
-    src="https://grafana.rsbengineering.dev/d/jorQjxQWk/home?orgId=1&amp;refresh=5s&amp;amp">
-</iframe> -->
+    src="https://graf.rsbengineering.dev/d/jorQjxQWk/home?orgId=1&amp;refresh=5s&amp;amp">
+</iframe>

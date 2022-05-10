@@ -4,6 +4,7 @@ tags: test
 category: troubleshooting
 author: Richard Blanchette
 summary: Short version for index and feeds
+status: True
 ##############
 
 # Richard Markdown Test Book

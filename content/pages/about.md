@@ -19,13 +19,15 @@ Concentration in Mechanical Design
 
 **Experience with Industrial Protocols:** EtherCAT, ProfiNET, Ethernet/IP, Modbus TCP, IO-Link, Powerlink
 
-**Programming Experience:** IEC 61131, C++, Python, Node-Red (JS), Git, Dockerfile / Docker Compose, ROS, SQL, MongoDB, Data Modeling
+**Information Exchange Experience:** REST, GraphQL, MQTT, KAFKA, OPC UA
+
+**Programming Experience:** IEC 61131, C++, Python, Node-Red (JS), Git, Dockerfile / Docker Compose, ROS, Data Modeling
+
+**Database Experience:** Snowflake, MongoDB, MSSQL server
 
 **Modeling Software Experience:** Inventor by Autodesk and Solid Works
 
 **Hobbies:** Arduino, raspberry pi, 3D printing, Home Server builds, Wood Working, Hunting
-
-**Certs**: Passed my Fundamental of Engineering test as of May 2014
 
 ### **Work Experience**
 
