@@ -10,26 +10,26 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://richardphi1618.github.io/richardphi1618/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.richardphi.dev/theme/stylesheet/style.min.css">
 
     <link id="dark-theme-style" rel="stylesheet" type="text/css"
           media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
-    href="https://richardphi1618.github.io/richardphi1618/theme/stylesheet/dark-theme.min.css">
+    href="https://www.richardphi.dev/theme/stylesheet/dark-theme.min.css">
 
     <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
-          href="https://richardphi1618.github.io/richardphi1618/theme/pygments/monokai.min.css">
+          href="https://www.richardphi.dev/theme/pygments/monokai.min.css">
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: light)"
-          href="https://richardphi1618.github.io/richardphi1618/theme/pygments/emacs.min.css">
+          href="https://www.richardphi.dev/theme/pygments/emacs.min.css">
 
 
-  <link rel="stylesheet" type="text/css" href="https://richardphi1618.github.io/richardphi1618/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://richardphi1618.github.io/richardphi1618/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://richardphi1618.github.io/richardphi1618/theme/font-awesome/css/solid.css">
+  <link rel="stylesheet" type="text/css" href="https://www.richardphi.dev/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://www.richardphi.dev/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://www.richardphi.dev/theme/font-awesome/css/solid.css">
 
 
-    <link href="https://richardphi1618.github.io/richardphi1618/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Richard Blanchette Personal Site Atom">
+    <link href="https://www.richardphi.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Richard Blanchette Personal Site Atom">
 
 
 
@@ -56,11 +56,11 @@
   <meta property="og:title" content="DIY Home IoT Network"/>
   <meta property="og:description" content="Write up of how I was able to create a local IoT network in my home."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="https://richardphi1618.github.io/richardphi1618/diy-home-iot-network.html"/>
+  <meta property="og:url" content="https://www.richardphi.dev/diy-home-iot-network.html"/>
   <meta property="og:type" content="article"/>
   <meta property="article:published_time" content="2020-04-22 00:00:00-04:00"/>
   <meta property="article:modified_time" content=""/>
-  <meta property="article:author" content="https://richardphi1618.github.io/richardphi1618/author/richard-blanchette.html">
+  <meta property="article:author" content="https://www.richardphi.dev/author/richard-blanchette.html">
   <meta property="article:section" content="home projects"/>
   <meta property="article:tag" content="IoT"/>
   <meta property="og:image" content="">
@@ -71,12 +71,12 @@
 <body >
   <aside>
     <div>
-      <a href="https://richardphi1618.github.io/richardphi1618/">
-        <img src="https://richardphi1618.github.io/richardphi1618/theme/img/profile.png" alt="Richardphi.dev" title="Richardphi.dev">
+      <a href="https://www.richardphi.dev/">
+        <img src="https://www.richardphi.dev/theme/img/profile.png" alt="Richardphi.dev" title="Richardphi.dev">
       </a>
 
       <h1>
-        <a href="https://richardphi1618.github.io/richardphi1618/">Richardphi.dev</a>
+        <a href="https://www.richardphi.dev/">Richardphi.dev</a>
       </h1>
 
 <p>Professional Problem Solver</p>
@@ -87,13 +87,13 @@
 
               <li>
                 <a target="_self"
-                   href="https://richardphi1618.github.io/richardphi1618/pages/about-me.html#about-me">
+                   href="https://www.richardphi.dev/pages/about-me.html#about-me">
                   About Me
                 </a>
               </li>
               <li>
                 <a target="_self"
-                   href="https://richardphi1618.github.io/richardphi1618/pages/contact-me.html#contact-me">
+                   href="https://www.richardphi.dev/pages/contact-me.html#contact-me">
                   Contact Me
                 </a>
               </li>
@@ -129,7 +129,7 @@
       
     <h1 id="diy-home-iot-network">DIY Home IoT Network</h1>
     <p>
-      Posted on Wed 22 April 2020 in <a href="https://richardphi1618.github.io/richardphi1618/category/home-projects.html">home projects</a>
+      Posted on Wed 22 April 2020 in <a href="https://www.richardphi.dev/category/home-projects.html">home projects</a>
 
     </p>
   </header>
@@ -138,20 +138,20 @@
   <div>
     <h6></h6>
 <p>I want my first post to be a top-level view of how I laid my house out for collecting and dashboarding data. Let us start with the diagram below:</p>
-<p><img alt="Home-Network" src="https://richardphi1618.github.io/richardphi1618/images/iot-diy/HomeMQTTNetwork.jpg"></p>
+<p><img alt="Home-Network" src="https://www.richardphi.dev/images/iot-diy/HomeMQTTNetwork.jpg"></p>
 <p>Whoa…. Lots going on here.</p>
 <p>Let us break it down starting from the “load” or sensor/panels. I collect data from multiple different sensor suites, and toggle bits through different interfaces, but they all share one thing in common - they are either subscribers or publishers to my MQTT broker. For more on MQTT check out this article: <a href="https://randomnerdtutorials.com/what-is-mqtt-and-how-it-works/">What is MQTT and How It Works.</a> In short, the broker acts as the middle man / traffic cop on what the data is and where this data should go. There are different ways to setup a Broker, but for my setup I simply had it collect and distribute the data and then delete it when it was done. No need to store it there when a database can do that for me.</p>
 <p><img alt="mqtt-broker" src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2017/01/mqtt_broker.png?resize=750%2C303&amp;ssl=1"></p>
 <p>My next problem, I needed a place for my broker to reside as a server. For full control, I decided to setup my own broker in my house. Other setups use off-site brokers and that is what is typical for “cloud” based solutions, but that can be costly. I also knew I wanted to log my data to a database, that would require some post/pre-processing before I logged, and I needed a way to show or “dashboard” this data over time. So, I went with what I thought would be the cheapest (let’s be honest - the most fun) option and built a home server myself out of new and old spare computer parts I had lying around.</p>
-<p><img alt="Home Server" src="https://richardphi1618.github.io/richardphi1618/images/iot-diy/homeserver.jpg"></p>
+<p><img alt="Home Server" src="https://www.richardphi.dev/images/iot-diy/homeserver.jpg"></p>
 <p>I also knew that having all of these service running on a single machine could become cumbersome and often times would be messy as you could potentially have the services over lap. I was doing some research on docker at the time and wanted to learn more so this seemed like a good time. What a great tool! Docker is awesome! Not only docker itself but the rabbit hole of other services and management tools out there that go with it. For some great examples look at: <a href="https://fleet.linuxserver.io">Image list</a> developed by <a href="https://www.linuxserver.io">LinuxServer.io</a> For now I'll gloss over it but would like to spend more time on documenting how my docker is setup. In summary I have multiple "containers" running each of these services as a complete "stack" or solution. Portainer is a seperate container I use to manage and review the health and settings of each of the containers without having to rely on the command line.</p>
-<p><img alt="Portainer" src="https://richardphi1618.github.io/richardphi1618/images/iot-diy/portainer.png"></p>
+<p><img alt="Portainer" src="https://www.richardphi.dev/images/iot-diy/portainer.png"></p>
 <p>Okay, so now that I have my environment and I have my communication from my devices to my server and it’s all talking over my home network (the easy part -ha). I needed to log the data somewhere. I didn’t want to point the data, being collected through the broker, straight into a database. Even if I did my best trying to maintain uniformity, there are things that just come across differently from different devices. Therefore, I needed some way of massaging the data and cleaning it before I stored it in my database. I stumbled across Node-Red as a powerful IO and data tool from my work in the industrial field. Advantech has some really fascinating products coming out using this.</p>
 <p>Node-Red is a graphic way of writing java code. I knew nothing about java going into this but was able to get a very basic program up and running in about an hour or two. What blew me away was the ability to download everything you needed for a dashboard from within the browser-based development environment. The layout also reminded me a lot of what I would see in the IEC-61131 languages known as function blocks. I didn’t need the code behind the block but the read-me associated with the block would tell me everything I needed to know about how to use it. Node-red is Java and I can see how people love it and hate it. The biggest thing I had to get used to was its’ event driven nature versus what I am traditionally used to with cyclic programming. Sample of what some of my code looks like:</p>
-<p><img alt="Node-Red Flow" src="https://richardphi1618.github.io/richardphi1618/images/iot-diy/node-red.png"></p>
+<p><img alt="Node-Red Flow" src="https://www.richardphi.dev/images/iot-diy/node-red.png"></p>
 <p>Right, now that I have my data cleaned and polished and ready for a database, I need to pick a database…. There are soooo many! The most ubiquitous database structure out there that I’ve seen/used was SQL (and the dozen or so cousins/forks from). The problem I saw with using SQL is that the data I wanted to record needed to be recorded with a time stamp. All the SQL based databases are relational, meaning I would have to do an extra step in managing large amounts of continuous data. InfluxDB on the other hand seemed to take all data acquired and automatically assigned it with a time stamp. It seemed better built for how I wanted to see my data, which is important for my dashboard.</p>
 <p>Dashboard is the most exciting part. I am not only seeing the state of my data, but I can make inferences based on what my data is doing over time. So many “AHA!” moments happen when you start doing this. Grafana seemed to be a top choice for a lot of people in the IT industry and it seemed light weight, and gorgeous! If you ever have time and want to go down a rabbit hole just google Grafana graphs and the data science nerd in me just can’t stop staring. Once I had Grafana up and running, it was less than an hour to point Grafana to my database and then it was simple to add scaling and titles, and viola! You too can make your data beautiful.</p>
-<p><img alt="Grafana Dashboard" src="https://richardphi1618.github.io/richardphi1618/images/iot-diy/grafana.png"></p>
+<p><img alt="Grafana Dashboard" src="https://www.richardphi.dev/images/iot-diy/grafana.png"></p>
 <p>So, from the picture above, you’ll see I’m also playing around seeing if I can monitor workload/ memory usage of the remote devices as well as my server (needs some work). Overall I am very happy with how it turned out. I also was able to add local weather with a node-red module that I found (in green).</p>
 <p>For now, I’m going to leave the post here. This intended to be a high-level look. Apologies if there is anything you were looking for more detail on. Feel free to reach out and I will happily give guidance or point you in the right direction if you have any questions. I may pick one or two pieces here to develop more into a how-to guide.</p>
 <p>Overall, I am extremely happy with this setup. The biggest thing I wanted to focus on here was flexibility and modular-iblity (not a word, but my blog so deal). What I didn’t go into here was how I use this same setup to control my lights and devices in my house either directly or with the use of IFTTT. Somebody built a Node-Red module that allows you to communicate directly with a Phillips Hue Hub. I have some Wyze plugs as well that I am not able to talk directly to on my network, but I was able to setup an IFTTT service using webhooks. Docker is such a rabbit hole for more projects, and I am looking forward to diving further in. Docker-compose, which I did not cover above, has also been a huge help. It   gives basic instructions on what I built and how I built it so I can come back to something I did months ago and immediately know how it is configured and setup.</p>
@@ -163,12 +163,12 @@ Recently Did a presentation on this in more detail. See my PowerPoint slides her
     title="Inline Frame Example"
     width=100%
     height="800"
-    src="https://graf.rsbengineering.dev/d/jorQjxQWk/home?orgId=1&amp;refresh=5s&amp;amp">
+    src="https://graf.richardphi.dev/d/jorQjxQWk/home?orgId=1&amp;refresh=5s&amp;amp">
 </iframe>
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://richardphi1618.github.io/richardphi1618/tag/iot.html">IoT</a>
+      <a href="https://www.richardphi.dev/tag/iot.html">IoT</a>
     </p>
   </div>
 
@@ -185,7 +185,7 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   <span class="footer-separator">|</span>
   Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
   <script id="dark-theme-script"
-          src="https://richardphi1618.github.io/richardphi1618/theme/dark-theme/dark-theme.min.js"
+          src="https://www.richardphi.dev/theme/dark-theme/dark-theme.min.js"
           data-enable-auto-detect-theme="True"
           data-default-theme="dark"
           type="text/javascript">
@@ -201,7 +201,7 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " Richard Blanchette Personal Site ",
-  "url" : "https://richardphi1618.github.io/richardphi1618",
+  "url" : "https://www.richardphi.dev",
   "image": "",
   "description": "Richard Blanchette's Thoughts and Writings"
 }

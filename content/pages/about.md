@@ -31,7 +31,7 @@ Concentration in Mechanical Design
 
 ### **Work Experience**
 
-**Apex Clean Energy, Disputanta, VA**  
+**Apex Clean Energy, Charlottesville, VA**  
 **Febuary 2022 – Present**
 
 Data Engineer 
